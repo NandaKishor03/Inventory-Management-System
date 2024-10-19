@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Inventory Management System</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Inventory Management System</h1>
+        <form id="item-form">
+            <input type="text" id="name" placeholder="Item Name" required />
+            <input type="number" id="quantity" placeholder="Quantity" required />
+            <input type="number" id="price" placeholder="Price" required />
+            <button class="submit" type="submit">Add Item</button>
+        </form>
+        <table>
+            <thead>
+                <tr>
+                    <th>Item Name</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="itemsTableBody">
+                <!-- Item rows will be populated here -->
+            </tbody>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
